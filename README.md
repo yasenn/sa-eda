@@ -5,6 +5,8 @@
 
 ## 3-tier MSA
 
+![3-tier MSA](https://miro.medium.com/max/1058/1*1KsfQoMqEifBYD8b3Z_iRw.png)
+
 ---
 ## ACID
 
@@ -100,7 +102,6 @@
 
 ### А если-таки нужна консистентность?
 
-
 ---
 # Итак, EDA
 
@@ -120,13 +121,93 @@ _Событие_ можно определить как «существенно
 ![](https://ic.pics.livejournal.com/legart/14901733/565645/565645_original.jpg)
 
 ---
+# Возможности EDA
+
+* Выше скорость получения данных
+* Меньше трафика
+* Больше гибкости и масштабируемости
+* Больше асинхронности
+* Больше DR
+
+---
+# Ограничения EDA
+
+* BASE
+* Early adoption
+* Не так много фреймворков
+
+---
+# EDA Patterns
+
+---
+## Patterns(?)
+
+![MSA Patterns](https://microservices.io/i/MicroservicePatternLanguage.jpg)
+[A pattern language for microservices](https://microservices.io/patterns/index.html)
+
+---
 ## Event Collaboration. 
+
+### Collaboration using requests
+
+![Collaboration using requests](https://martinfowler.com/eaaDev/eventCollaboration/requestSD.gif)
+
+source: [Event Collaboration](https://martinfowler.com/eaaDev/EventCollaboration.html)
+
+---
+## Event Collaboration. 
+
+### Collaboration using events
+![Collaboration using events](https://martinfowler.com/eaaDev/eventCollaboration/eventSD.gif)
+
+
+---
+## Event Cascade
+
+* A, B, C
+* A -> B 
+* B -> C
+
+
+A -> B -> C (??)
+
 
 ---
 ## Event for Transfer State
 
+![Event-or-not-event](https://miro.medium.com/max/640/1*ERtyn6NFeUl3Jr2APe5g9A.jpeg)
+
 ---
 ## Event Sourcing.
+![](https://microservices.io/i/storingevents.png)
+
+---
+## CQRS
+
+![CQRS](https://miro.medium.com/max/1400/1*Ef4zV2hq1u_2uOWVsQKuYA.jpeg)
+
+CQRS Application
+
+
+---
+### Notification Pattern
+
+![Notification pattern](https://miro.medium.com/max/1384/1*66M8kUU7DgpumwSX3Dn6Zw.png)
+
+---
+## Event-Carried State Transfer(ECST)
+![Event-Carried State Transfer(ECST)](https://miro.medium.com/max/1400/1*pXWazGM-Q9asIdeiwFbCDQ.jpeg)
+
+> CAP (!)
+
+---
+## Event Sourcing(ES)
+
+![](https://miro.medium.com/max/1342/1*qgoWN-hsHN226DxX6hXC1g.jpeg)
+
+Event Sourced Application
+
+---
 
 # Примеры
 
